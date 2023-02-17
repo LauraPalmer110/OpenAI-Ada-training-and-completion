@@ -12,7 +12,7 @@ df_text <- df["text"]
 df_text$category <- NULL
 
 Sys.setenv(
-  OPENAI_API_KEY = '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'
+  OPENAI_API_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 )
 
 
@@ -20,7 +20,7 @@ for (j in 1:nrow(df_text)) {
   res <- tryCatch(
     {
       create_completion(
-        model = "ada:ft-personal-2023-02-15-13-29-31",
+        model = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         prompt = paste0(substring(df_text$text[j], 1, 97), "\n\n###\n\n"),
         temperature = 0,
         top_p = 1,
@@ -41,7 +41,7 @@ for (j in 1:nrow(df_text)) {
     res <- tryCatch(
       {
         create_completion(
-          model = "ada:ft-personal-2023-02-15-13-29-31",
+          model = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
           prompt = paste0(substring(df_text$text[j], 1, 97), "\n\n###\n\n"),
           temperature = 0,
           top_p = 1,
