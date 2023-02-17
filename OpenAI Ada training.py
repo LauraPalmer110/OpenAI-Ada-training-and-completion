@@ -70,7 +70,7 @@ PROCEDURA PER LA CONVERSIONE:
 '''
 
 # validazione della key di OpenAI e caricamento dei file nel server
-openai.api_key = "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"
+openai.api_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 # caricamento dei dataset di training e validazione
 openai.File.create(
@@ -84,7 +84,7 @@ openai.File.create(
 )
 
 # creazione del modello di fine-tuning
-openai.FineTune.create(training_file="file-GjiBh7Yj1Rh5T933h8tDjWmi", validation_file="file-uZkmdCtJeM1ndoRTYbtdLLH1", model="ada")
+openai.FineTune.create(training_file="XXXXXXXXXXXXXXXXXXXXX", validation_file="XXXXXXXXXXXXXXXXXXXXX", model="ada")
 
 # comandi per seguire in tempo reale lo stato di lavorazione del modello
 openai.FineTune.list()
